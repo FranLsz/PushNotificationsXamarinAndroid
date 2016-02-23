@@ -5,7 +5,7 @@ using PushApp.Core.ViewModels;
 
 namespace PushApp.Droid.Views
 {
-    [Activity(Label = "Home", MainLauncher = true)]
+    [Activity(Label = "Push app", MainLauncher = true)]
     public class HomeView : MvxActivity
     {
         public new HomeViewModel ViewModel
