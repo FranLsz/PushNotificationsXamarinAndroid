@@ -7,8 +7,7 @@ using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Platform;
 using PushApp.Core;
-using PushApp.Core.Services;
-using PushApp.Core.Utils;
+using PushApp.Core.Utiles;
 
 namespace PushApp.Droid
 {
@@ -19,7 +18,6 @@ namespace PushApp.Droid
             RegisterWithGcm(applicationContext);
         }
 
-
         protected override IMvxApplication CreateApp()
         {
             return new App();
@@ -27,12 +25,12 @@ namespace PushApp.Droid
 
         private void RegisterWithGcm(Context applicationContext)
         {
-            // Check to ensure everything's setup right
+            // Revisa el dispositivo y el manifiesto
             GcmClient.CheckDevice(applicationContext);
             GcmClient.CheckManifest(applicationContext);
 
-            // Register for push notifications
-            GcmClient.Register(applicationContext, GlobalVars.SenderID);
+            // Registra el dispositivo
+            GcmClient.Register(applicationContext, Constantes.SenderId);
         }
     }
 }

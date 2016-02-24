@@ -1,24 +1,23 @@
 ﻿using Android.App;
-using Android.Widget;
 using MvvmCross.Droid.Views;
 using PushApp.Core.ViewModels;
 
 namespace PushApp.Droid.Views
 {
-    [Activity(Label = "Almacén de smartphones", MainLauncher = true)]
-    public class HomeView : MvxActivity
+    [Activity(Label = "Nuevo smartphone")]
+    public class NuevoView : MvxActivity
     {
-        public new HomeViewModel ViewModel
+        public new NuevoViewModel ViewModel
         {
-            get { return (HomeViewModel)base.ViewModel; }
+            get { return (NuevoViewModel)base.ViewModel; }
             set { base.ViewModel = value; }
         }
 
         protected override void OnViewModelSet()
         {
             base.OnViewModelSet();
-            
-            SetContentView(Resource.Layout.Home);
+
+            SetContentView(Resource.Layout.Nuevo);
         }
     }
 }

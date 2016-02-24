@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xamarin.pushapp.droid" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
+	<uses-sdk />
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<!--<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
 	<uses-permission android:name="android.permission.INTERNET" />
 	<!--<uses-permission android:name="com.xamarin.pushapp.droid.permission.C2D_MESSAGE" />
   <permission android:name="com.xamarin.pushapp.droid.permission.C2D_MESSAGE"
               android:protectionLevel="signature" />-->
-	<application android:label="Push app" android:icon="@drawable/Icon"></application>
+	<application android:label="Almacén de smartphones" android:icon="@drawable/Icon"></application>
 </manifest>

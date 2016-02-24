@@ -35,12 +35,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Models\UsuarioModel.cs" />
+    <Compile Include="Model\SmartphoneVm.cs" />
+    <Compile Include="Model\Smartphone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\IServicioDatos.cs" />
-    <Compile Include="Services\ServicioDatos.cs" />
-    <Compile Include="Utils\GlobalVars.cs" />
+    <Compile Include="Servicios\IServicioDatos.cs" />
+    <Compile Include="Servicios\ServicioDatos.cs" />
+    <Compile Include="Utiles\Constantes.cs" />
+    <Compile Include="ViewModels\DetalleViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\NuevoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.WindowsAzure.Mobile, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">

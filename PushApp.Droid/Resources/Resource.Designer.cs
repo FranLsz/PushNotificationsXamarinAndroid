@@ -146,97 +146,100 @@ namespace PushApp.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int common_full_open_on_phone = 2130837504;
+			public const int back = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int common_ic_googleplayservices = 2130837505;
+			public const int common_full_open_on_phone = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int common_signin_btn_icon_dark = 2130837506;
+			public const int common_ic_googleplayservices = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int common_signin_btn_icon_disabled_dark = 2130837507;
+			public const int common_signin_btn_icon_dark = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int common_signin_btn_icon_disabled_focus_dark = 2130837508;
+			public const int common_signin_btn_icon_disabled_dark = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int common_signin_btn_icon_disabled_focus_light = 2130837509;
+			public const int common_signin_btn_icon_disabled_focus_dark = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int common_signin_btn_icon_disabled_light = 2130837510;
+			public const int common_signin_btn_icon_disabled_focus_light = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int common_signin_btn_icon_focus_dark = 2130837511;
+			public const int common_signin_btn_icon_disabled_light = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int common_signin_btn_icon_focus_light = 2130837512;
+			public const int common_signin_btn_icon_focus_dark = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int common_signin_btn_icon_light = 2130837513;
+			public const int common_signin_btn_icon_focus_light = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int common_signin_btn_icon_normal_dark = 2130837514;
+			public const int common_signin_btn_icon_light = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int common_signin_btn_icon_normal_light = 2130837515;
+			public const int common_signin_btn_icon_normal_dark = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int common_signin_btn_icon_pressed_dark = 2130837516;
+			public const int common_signin_btn_icon_normal_light = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int common_signin_btn_icon_pressed_light = 2130837517;
+			public const int common_signin_btn_icon_pressed_dark = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int common_signin_btn_text_dark = 2130837518;
+			public const int common_signin_btn_icon_pressed_light = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int common_signin_btn_text_disabled_dark = 2130837519;
+			public const int common_signin_btn_text_dark = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int common_signin_btn_text_disabled_focus_dark = 2130837520;
+			public const int common_signin_btn_text_disabled_dark = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int common_signin_btn_text_disabled_focus_light = 2130837521;
+			public const int common_signin_btn_text_disabled_focus_dark = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int common_signin_btn_text_disabled_light = 2130837522;
+			public const int common_signin_btn_text_disabled_focus_light = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int common_signin_btn_text_focus_dark = 2130837523;
+			public const int common_signin_btn_text_disabled_light = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int common_signin_btn_text_focus_light = 2130837524;
+			public const int common_signin_btn_text_focus_dark = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int common_signin_btn_text_light = 2130837525;
+			public const int common_signin_btn_text_focus_light = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int common_signin_btn_text_normal_dark = 2130837526;
+			public const int common_signin_btn_text_light = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int common_signin_btn_text_normal_light = 2130837527;
+			public const int common_signin_btn_text_normal_dark = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int common_signin_btn_text_pressed_dark = 2130837528;
+			public const int common_signin_btn_text_normal_light = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int common_signin_btn_text_pressed_light = 2130837529;
+			public const int common_signin_btn_text_pressed_dark = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int ic_plusone_medium_off_client = 2130837530;
+			public const int common_signin_btn_text_pressed_light = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int ic_plusone_small_off_client = 2130837531;
+			public const int ic_plusone_medium_off_client = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int ic_plusone_standard_off_client = 2130837532;
+			public const int ic_plusone_small_off_client = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int ic_plusone_tall_off_client = 2130837533;
+			public const int ic_plusone_standard_off_client = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int Icon = 2130837534;
+			public const int ic_plusone_tall_off_client = 2130837534;
+			
+			// aapt resource value: 0x7f02001f
+			public const int Icon = 2130837535;
 			
 			static Drawable()
 			{
@@ -263,14 +266,41 @@ namespace PushApp.Droid
 			// aapt resource value: 0x7f070003
 			public const int adjust_width = 2131165187;
 			
-			// aapt resource value: 0x7f070005
-			public const int button1 = 2131165189;
+			// aapt resource value: 0x7f07000b
+			public const int button1 = 2131165195;
+			
+			// aapt resource value: 0x7f07000c
+			public const int editText1 = 2131165196;
+			
+			// aapt resource value: 0x7f07000d
+			public const int editText2 = 2131165197;
+			
+			// aapt resource value: 0x7f07000e
+			public const int editText3 = 2131165198;
 			
 			// aapt resource value: 0x7f070004
 			public const int none = 2131165188;
 			
+			// aapt resource value: 0x7f07000a
+			public const int stackView1 = 2131165194;
+			
+			// aapt resource value: 0x7f07000f
+			public const int stackView2 = 2131165199;
+			
+			// aapt resource value: 0x7f070005
+			public const int textView1 = 2131165189;
+			
 			// aapt resource value: 0x7f070006
-			public const int textView1 = 2131165190;
+			public const int textView2 = 2131165190;
+			
+			// aapt resource value: 0x7f070007
+			public const int textView3 = 2131165191;
+			
+			// aapt resource value: 0x7f070009
+			public const int textView4 = 2131165193;
+			
+			// aapt resource value: 0x7f070008
+			public const int textView5 = 2131165192;
 			
 			static Id()
 			{
@@ -302,7 +332,16 @@ namespace PushApp.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Home = 2130903040;
+			public const int Detalle = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Home = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int listitem = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Nuevo = 2130903043;
 			
 			static Layout()
 			{

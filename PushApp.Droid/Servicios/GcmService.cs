@@ -6,7 +6,7 @@ using Android.App;
 using Android.Content;
 using Android.Support.V4.App;
 using Gcm.Client;
-using PushApp.Core.Utils;
+using PushApp.Core.Utiles;
 
 [assembly: Permission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
 [assembly: UsesPermission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
@@ -16,7 +16,7 @@ using PushApp.Core.Utils;
 [assembly: UsesPermission(Name = "android.permission.INTERNET")]
 [assembly: UsesPermission(Name = "android.permission.WAKE_LOCK")]
 
-namespace PushApp.Droid.Services
+namespace PushApp.Droid.Servicios
 {
     [BroadcastReceiver(Permission = Constants.PERMISSION_GCM_INTENTS)]
     [IntentFilter(new[] { Constants.INTENT_FROM_GCM_MESSAGE }, Categories = new[] { "@PACKAGE_NAME@" })]
@@ -24,7 +24,7 @@ namespace PushApp.Droid.Services
     [IntentFilter(new[] { Constants.INTENT_FROM_GCM_LIBRARY_RETRY }, Categories = new[] { "@PACKAGE_NAME@" })]
     public class BroadcastReceiver : GcmBroadcastReceiverBase<PushHandlerService>
     {
-        public static string[] SENDER_IDS = { GlobalVars.SenderID };
+        public static string[] SENDER_IDS = { Constantes.SenderId };
         public const string TAG = "BroadcastReceiver-GCM";
     }
 
@@ -70,7 +70,7 @@ namespace PushApp.Droid.Services
         {
             RegistrationID = registrationId;
 
-            Hub = new NotificationHub(GlobalVars.NotificationHubPath, GlobalVars.ConnectionString, context);
+            Hub = new NotificationHub(Constantes.NotificationHubPath, Constantes.ConnectionString, context);
             try
             {
                 Hub.UnregisterAll(registrationId);

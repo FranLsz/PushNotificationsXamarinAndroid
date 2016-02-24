@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:padding="25dp">
     <Button
-        android:text="Button"
+        local:MvxBind="Click CmdNuevo"
+        android:text="Nuevo smartphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button1" />
+        android:id="@+id/button1"
+        android:background="#3F4A95"
+        android:textColor="#EFEFEF" />
     <TextView
-        android:text="Large Text"
+        android:text="Listado"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
+        android:layout_height="60.0dp"
+        android:id="@+id/textView1"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp" />
+    <Mvx.MvxListView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        local:MvxBind="ItemsSource SmartphoneLista; SelectedItem SmartphoneSeleccionado"
+        local:MvxItemTemplate="@layout/listitem"
+        android:divider="#3F4A95"
+        android:dividerHeight="2dp" />
 </LinearLayout>
