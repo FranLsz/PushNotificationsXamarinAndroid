@@ -6,6 +6,8 @@ using Android.App;
 using Android.Content;
 using Android.Support.V4.App;
 using Gcm.Client;
+using Newtonsoft.Json;
+using PushApp.Core.Model;
 using PushApp.Core.Utiles;
 
 [assembly: Permission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
@@ -43,27 +45,15 @@ namespace PushApp.Droid.Servicios
 
         protected override void OnMessage(Context context, Intent intent)
         {
+            string messageText = intent.Extras.GetString("mensaje");
+            var smartphone = JsonConvert.DeserializeObject<Smartphone>(messageText);
 
-            var msg = new StringBuilder();
+            var text =
+                "Modelo: " + smartphone.Modelo +
+                "\nFabricante: " + smartphone.Fabricante +
+                "\nPrecio: " + smartphone.Precio + " €";
 
-            if (intent != null && intent.Extras != null)
-            {
-                foreach (var key in intent.Extras.KeySet())
-                {
-                    msg.AppendLine(key + "=" + intent.Extras.Get(key).ToString());
-                }
-            }
-            string messageText = intent.Extras.GetString("msg");
-            string parameterText = intent.Extras.GetString("param");
-            if (!string.IsNullOrEmpty(messageText))
-            {
-                CreateNotification("Awesome Notification...", messageText, parameterText);
-                return;
-            }
-
-            // If the incoming message's parameters couldn't be recognized, then this Notification will be published...
-            CreateNotification("Awesome Notification...", msg.ToString());
-
+            CreateNotification("Nuevo smartphone", text);
         }
 
         protected override void OnRegistered(Context context, string registrationId)
@@ -97,13 +87,14 @@ namespace PushApp.Droid.Servicios
 
         }
 
-        static void CreateNotification(string title, string desc, string parameters = null)
+        static void CreateNotification(string title, string desc)
         {
             var context = Android.App.Application.Context;
 
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
                 .SetAutoCancel(true)
                 .SetSmallIcon(Resource.Drawable.Icon)
+                .SetStyle(new NotificationCompat.BigTextStyle().BigText(desc))
                 .SetContentTitle(title)
                 .SetContentText(desc);
 
@@ -148,6 +139,6 @@ namespace PushApp.Droid.Servicios
             #endregion
         }
 
-        
+
     }
 }
