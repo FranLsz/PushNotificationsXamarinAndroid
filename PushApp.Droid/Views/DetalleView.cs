@@ -4,7 +4,7 @@ using PushApp.Core.ViewModels;
 
 namespace PushApp.Droid.Views
 {
-    [Activity(Label = "Detalles")]
+    [Activity(Label = "Detalle del smartphone")]
     public class DetalleView : MvxActivity
     {
         public new DetalleViewModel ViewModel
