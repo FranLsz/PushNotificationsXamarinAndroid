@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Views;
 using MvvmCross.Droid.Views;
 using PushApp.Core.ViewModels;
 
@@ -18,7 +19,16 @@ namespace PushApp.Droid.Views
         {
             base.OnViewModelSet();
 
+            ActionBar.SetHomeButtonEnabled(true);
+            ActionBar.SetDisplayHomeAsUpEnabled(true);
+
             SetContentView(Resource.Layout.Detalle);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            Finish();
+            return true;
         }
     }
 }
